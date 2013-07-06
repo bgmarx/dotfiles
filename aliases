@@ -1,0 +1,19 @@
+## UNIX ##
+alias logtail="tail -f log/development.log"
+
+
+## GIT ##
+alias s="git status -sb"
+alias glog='git log --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
+alias gl="glog --graph"
+alias gau="git add --update"
+alias gc="git commit"
+alias gco="git checkout"
+alias gd="git diff"
+alias ga="git add"
+alias gp="git push"
+alias gpr="git pull --rebase"
+
+
+## RAILS ##
+alias go="foreman start"
