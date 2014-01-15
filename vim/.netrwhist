@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/ben/Sites/phpMyAdmin/config'
 let g:netrw_dirhist_2='/private/etc/apache2/users'
 let g:netrw_dirhist_3='/Users/ben/.oh-my-zsh'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/Users/ben/dotfiles/vim/autoload/vim-pathogen'
 let g:netrw_dirhist_6='/Users/ben/dotfiles/.git'
 let g:netrw_dirhist_7='/Applications/MAMP'
 let g:netrw_dirhist_8='/Users/ben/dev/chalk/nibbler/app/serializers/user/content'
+let g:netrw_dirhist_9='/Users/Ben/.vim'

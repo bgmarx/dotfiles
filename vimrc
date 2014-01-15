@@ -1,17 +1,32 @@
-set guifont=Monaco:h12            " Font family and font size.
-set antialias                     " MacVim: smooth fonts.
-set encoding=utf-8                " Use UTF-8 everywhere.
-set guioptions-=T                 " Hide toolbar.
-set background=dark             " Background.
 set nocompatible                  " Must come first because it changes other options.
-call pathogen#infect()
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+"  required! 
+Bundle 'gmarik/vundle'
+
+Bundle 'tpope/vim-fugitive'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-haml'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'tpope/vim-cucumber'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'kien/ctrlp.vim'
+Bundle 'rking/ag.vim'
+Bundle 'mhinz/vim-startify'
+Bundle 'Lokaltog/powerline'
+Bundle 'scrooloose/nerdtree'
+
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
 runtime macros/matchit.vim        " Load the matchit plugin.
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
-set clipboard=unnamed             " yank text
 
 set backspace=indent,eol,start    " Intuitive backspacing.
 
@@ -37,8 +52,7 @@ set title                         " Set the terminal's title
 set visualbell                    " No beeping.
 
 set list
-"set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:< " whitespace
-set listchars=tab:▸\ ,eol:¬,trail:>,precedes:< " whitespace
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:< " whitespace
 
 set backupdir =~/.tmp
 set noswapfile                   " no swap files
@@ -46,35 +60,19 @@ set noswapfile                   " no swap files
 set tabstop=2                    " Global tab width.
 set shiftwidth=2                 " And again, related.
 set expandtab                    " Use spaces instead of tabs
-set laststatus=2                  " Show the status line all the time
-
-" Enable basic mouse behavior such as resizing buffers.
-set mouse=a
-if exists('$TMUX')  " Support resizing in tmux
-  set ttymouse=xterm2
-endif
-
-" Fix Cursor in TMUX
-if exists('$TMUX')
-  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-else
-  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-endif
+set laststatus=2                 " Show the status line all the time
+set encoding=utf-8
+set clipboard=unnamed            " yank and paste with the system clipboard
+set autoread                     " reload files when changed on disk, i.e. via `git checkout`
 
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
+set term=xterm-256color
 colorscheme monokai
 
-highlight clear SignColumn
-
-" ctrl P
+" ctrl P 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-
-"tagbar
-nmap <F8> :TagbarToggle<CR>
 
 " NERDTree Shortcuts
 map <tab> :NERDTreeToggle<CR>
@@ -90,7 +88,31 @@ map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
 
-let g:Powerline_symbols = 'fancy'
+" Word No Wrapping
+set nowrap
+
+" When you press gv you vimgrep after the selected text
+vnoremap <silent> gv :call VisualSelection('gv')<CR>
+
+" Open vimgrep and put the cursor in the right position
+map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
+
+" Vimgreps in the current file
+map <leader><space> :vimgrep // <C-R>%<C-A><right><right><right><right><right><right><right><right><right>
+
+" When you press <leader>r you can search and replace the selected text
+vnoremap <silent> <leader>r :call VisualSelection('replace')<CR>
+"
+map <leader>cc :botright cope<cr>
+map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
+map <leader>n :cn<cr>
+map <leader>p :cp<cr>
+
+" Enable basic mouse behavior such as resizing buffers.
+set mouse=a
+if exists('$TMUX')  " Support resizing in tmux
+  set ttymouse=xterm2
+endif
 
 " Delete trailing white space on save
 func! DeleteTrailingWS()
@@ -98,9 +120,8 @@ func! DeleteTrailingWS()
   %s/\s\+$//ge
   exe "normal `z"
 endfunc
-autocmd BufWrite *.rb :call DeleteTrailingWS()
+autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
-autocmd BufWrite *.haml :call DeleteTrailingWS()
 
 " Return to last edit position when opening files
 autocmd BufReadPost *
@@ -110,5 +131,23 @@ autocmd BufReadPost *
 " Remember info about open buffers on close
 set viminfo^=%
 
-set wm=4
+" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
+if executable('ag')
+  let g:ackprg = 'ag --nogroup --column'
+
+  " Use Ag over Grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
+
+" Fix Cursor in TMUX
+if exists('$TMUX')
+  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+else
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+endif
 
