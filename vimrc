@@ -89,7 +89,10 @@ map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
 
 " Word No Wrapping
-set nowrap
+set wrap
+set linebreak
+set nolist  " list disables linebreak
+set colorcolumn=80
 
 " When you press gv you vimgrep after the selected text
 vnoremap <silent> gv :call VisualSelection('gv')<CR>
