@@ -20,6 +20,7 @@ Bundle 'rking/ag.vim'
 Bundle 'mhinz/vim-startify'
 Bundle 'Lokaltog/powerline'
 Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
 
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
