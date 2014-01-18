@@ -21,6 +21,7 @@ Bundle 'mhinz/vim-startify'
 Bundle 'Lokaltog/powerline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
+Bundle 'mustache/vim-mustache-handlebars'
 
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
