@@ -13,7 +13,5 @@ alias gd="git diff"
 alias ga="git add"
 alias gp="git push"
 alias gpr="git pull --rebase"
+alias vim="/usr/local/bin/vim"
 
-
-## RAILS ##
-alias go="foreman start"
