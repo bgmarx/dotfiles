@@ -22,7 +22,9 @@ Bundle 'Lokaltog/powerline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'mustache/vim-mustache-handlebars'
-
+Bundle 'vim-pandoc/vim-pandoc'
+Bundle 'mikewest/vimroom'
+Bundle 'tpope/vim-markdown'
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
