@@ -25,6 +25,8 @@ Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'vim-pandoc/vim-pandoc'
 Bundle 'mikewest/vimroom'
 Bundle 'tpope/vim-markdown'
+Bundle 'guns/vim-clojure-static'
+Bundle 'tpope/vim-fireplace'
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
