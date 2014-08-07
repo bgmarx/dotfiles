@@ -45,11 +45,12 @@ ZSH_THEME="af-magic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew bundler git-flow lol rails ruby rvm  virtualenv)
+plugins=(git brew bundler git-flow lol rails ruby virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
 
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH=$PATH:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:$HOME/.rvm/bin
+export PATH="/Users/ben/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
+source /opt/boxen/env.sh

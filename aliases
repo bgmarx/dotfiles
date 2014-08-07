@@ -13,5 +13,6 @@ alias gd="git diff"
 alias ga="git add"
 alias gp="git push"
 alias gpr="git pull --rebase"
-alias vim="/usr/local/bin/vim"
+alias vi="/opt/boxen/homebrew/bin/vim"
+alias emacs="/opt/boxen/homebrew/bin/emacs"
 
