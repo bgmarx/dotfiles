@@ -45,3 +45,4 @@
 (helm-mode 1)
 (powerline-default-theme)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+(load-theme 'cyberpunk t)
