@@ -26,7 +26,6 @@ Plugin 'mikewest/vimroom'
 Plugin 'tpope/vim-markdown'
 Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fireplace'
-Plugin 'terryma/vim-multiple-cursors'
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
