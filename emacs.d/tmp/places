@@ -1,0 +1,11 @@
+;;; -*- coding: utf-8 -*-
+(("/Users/ben/.ido.last" . 4469)
+ ("/Users/ben/.live-packs/ben-pack/init.el" . 179)
+ ("/Users/ben/dev/chalk/mom_catalog_models/db/seeds/institution_list.rb" . 571)
+ ("/Users/ben/dev/jplt-api/app/controllers/kanjis_controller.rb" . 158)
+ ("/Users/ben/dev/jplt-api/app/models/compound.rb" . 86)
+ ("/Users/ben/dev/jplt-api/app/serializers/kanji_serializer.rb" . 146)
+ ("/Users/ben/dev/jplt-api/db/migrate/20141007064246_create_vocabularies.rb" . 353)
+ ("/Users/ben/dev/jplt-api/db/migrate/20141007064306_create_kanjis.rb" . 458)
+ ("/Users/ben/dev/jplt-api/db/migrate/20141007065218_create_compounds.rb" . 202)
+ ("/Users/ben/dev/jplt-api/db/seeds.rb" . 1379))
