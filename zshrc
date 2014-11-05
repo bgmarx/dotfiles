@@ -54,21 +54,4 @@ export TERM=xterm-256color
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="/Users/ben/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
-source /opt/boxen/env.sh
-#eval export PATH="/opt/boxen/rbenv/shims:${PATH}"
-#source "/opt/boxen/rbenv/libexec/../completions/rbenv.zsh"
-#rbenv rehash 2>/dev/null
-#rbenv() {
-#  typeset command
-#  command="$1"
-#  if [ "$#" -gt 0 ]; then
-#    shift
-#  fi
-#
-#  case "$command" in
-#  rehash|shell)
-#    eval `rbenv "sh-$command" "$@"`;;
-#  *)
-#    command rbenv "$command" "$@";;
-#  esac
-#}
+eval "$(rbenv init -)"

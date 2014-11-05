@@ -3,9 +3,120 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "el-get/el-get" "el-get/el-get.el" (21592 35594
-;;;;;;  0 0))
+;;;### (autoloads nil "../../dotfiles/emacs.d/el-get/el-get/el-get"
+;;;;;;  "el-get/el-get.el" "df48f6d0aee048d76de822433b84f528")
 ;;; Generated autoloads from el-get/el-get.el
+
+(autoload 'el-get-version "../../dotfiles/emacs.d/el-get/el-get/el-get" "\
+Message the current el-get version
+
+\(fn)" t nil)
+
+(autoload 'el-get-install "../../dotfiles/emacs.d/el-get/el-get/el-get" "\
+Cause the named PACKAGE to be installed after all of its
+dependencies (if any).
+
+PACKAGE may be either a string or the corresponding symbol.
+
+\(fn PACKAGE)" t nil)
+
+(autoload 'el-get-update "../../dotfiles/emacs.d/el-get/el-get/el-get" "\
+Update PACKAGE.
+
+\(fn PACKAGE)" t nil)
+
+(autoload 'el-get-update-all "../../dotfiles/emacs.d/el-get/el-get/el-get" "\
+Performs update of all installed packages.
+
+\(fn &optional NO-PROMPT)" t nil)
+
+(autoload 'el-get-update-packages-of-type "../../dotfiles/emacs.d/el-get/el-get/el-get" "\
+Update all installed packages of type TYPE.
+
+\(fn TYPE)" t nil)
+
+(autoload 'el-get-self-update "../../dotfiles/emacs.d/el-get/el-get/el-get" "\
+Update el-get itself.  The standard recipe takes care of reloading the code.
+
+\(fn)" t nil)
+
+(autoload 'el-get-remove "../../dotfiles/emacs.d/el-get/el-get/el-get" "\
+Remove any PACKAGE that is know to be installed or required.
+
+\(fn PACKAGE &optional PACKAGE-STATUS-ALIST)" t nil)
+
+(autoload 'el-get-reinstall "../../dotfiles/emacs.d/el-get/el-get/el-get" "\
+Remove PACKAGE and then install it again.
+
+\(fn PACKAGE)" t nil)
+
+(autoload 'el-get-cd "../../dotfiles/emacs.d/el-get/el-get/el-get" "\
+Open dired in the package directory.
+
+\(fn PACKAGE)" t nil)
+
+(autoload 'el-get-make-recipes "../../dotfiles/emacs.d/el-get/el-get/el-get" "\
+Loop over `el-get-sources' and write a recipe file for each
+entry which is not a symbol and is not already a known recipe.
+
+\(fn &optional DIR)" t nil)
+
+(autoload 'el-get-checksum "../../dotfiles/emacs.d/el-get/el-get/el-get" "\
+Compute the checksum of the given package, and put it in the kill-ring
+
+\(fn PACKAGE &optional PACKAGE-STATUS-ALIST)" t nil)
+
+(autoload 'el-get-self-checksum "../../dotfiles/emacs.d/el-get/el-get/el-get" "\
+Compute the checksum of the running version of el-get itself.
+
+Also put the checksum in the kill-ring.
+
+\(fn)" t nil)
+
+(autoload 'el-get "../../dotfiles/emacs.d/el-get/el-get/el-get" "\
+Ensure that packages have been downloaded once and init them as needed.
+
+This will not update the sources by using `apt-get install' or
+`git pull', but it will ensure that:
+
+* the packages have been installed
+* load-path is set so their elisp files can be found
+* Info-directory-list is set so their info files can be found
+* Autoloads have been prepared and evaluated for each package
+* Any post-installation setup (e.g. `(require 'feature)') happens
+
+When SYNC is nil (the default), all installations run
+concurrently, in the background.
+
+When SYNC is 'sync, each package will be installed synchronously,
+and any error will stop it all.
+
+Please note that the `el-get-init' part of `el-get' is always
+done synchronously. There's `byte-compile' support though, and
+the packages you use are welcome to use `autoload' too.
+
+PACKAGES is expected to be a list of packages you want to install
+or init.  When PACKAGES is omited (the default), the list of
+already installed packages is considered.
+
+\(fn &optional SYNC &rest PACKAGES)" nil nil)
+
+;;;***
+
+;;;### (autoloads nil "../../dotfiles/emacs.d/el-get/el-get/el-get-list-packages"
+;;;;;;  "el-get/el-get-list-packages.el" "e2e95178b67be6c817bc2618f5d61291")
+;;; Generated autoloads from el-get/el-get-list-packages.el
+
+(autoload 'el-get-list-packages "../../dotfiles/emacs.d/el-get/el-get/el-get-list-packages" "\
+Display a list of packages.
+
+\(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads nil "el-get/el-get" "../../../.emacs.d/el-get/el-get/el-get.el"
+;;;;;;  "df48f6d0aee048d76de822433b84f528")
+;;; Generated autoloads from ../../../.emacs.d/el-get/el-get/el-get.el
 
 (autoload 'el-get-version "el-get/el-get" "\
 Message the current el-get version
@@ -103,9 +214,9 @@ already installed packages is considered.
 
 ;;;***
 
-;;;### (autoloads nil "el-get/el-get-list-packages" "el-get/el-get-list-packages.el"
-;;;;;;  (21592 35594 0 0))
-;;; Generated autoloads from el-get/el-get-list-packages.el
+;;;### (autoloads nil "el-get/el-get-list-packages" "../../../.emacs.d/el-get/el-get/el-get-list-packages.el"
+;;;;;;  "e2e95178b67be6c817bc2618f5d61291")
+;;; Generated autoloads from ../../../.emacs.d/el-get/el-get/el-get-list-packages.el
 
 (autoload 'el-get-list-packages "el-get/el-get-list-packages" "\
 Display a list of packages.
@@ -114,11 +225,15 @@ Display a list of packages.
 
 ;;;***
 
-;;;### (autoloads nil nil ("el-get/el-get-autoloads.el" "el-get/el-get-build.el"
-;;;;;;  "el-get/el-get-byte-compile.el" "el-get/el-get-core.el" "el-get/el-get-custom.el"
-;;;;;;  "el-get/el-get-dependencies.el" "el-get/el-get-install.el"
-;;;;;;  "el-get/el-get-methods.el" "el-get/el-get-notify.el" "el-get/el-get-recipes.el"
-;;;;;;  "el-get/el-get-status.el") (21592 35597 631188 0))
+;;;### (autoloads nil nil ("../../../.emacs.d/el-get/el-get/el-get-autoloads.el"
+;;;;;;  "../../../.emacs.d/el-get/el-get/el-get-build.el" "../../../.emacs.d/el-get/el-get/el-get-byte-compile.el"
+;;;;;;  "../../../.emacs.d/el-get/el-get/el-get-core.el" "../../../.emacs.d/el-get/el-get/el-get-custom.el"
+;;;;;;  "../../../.emacs.d/el-get/el-get/el-get-dependencies.el"
+;;;;;;  "../../../.emacs.d/el-get/el-get/el-get-install.el" "../../../.emacs.d/el-get/el-get/el-get-list-packages.el"
+;;;;;;  "../../../.emacs.d/el-get/el-get/el-get-methods.el" "../../../.emacs.d/el-get/el-get/el-get-notify.el"
+;;;;;;  "../../../.emacs.d/el-get/el-get/el-get-recipes.el" "../../../.emacs.d/el-get/el-get/el-get-status.el"
+;;;;;;  "../../../.emacs.d/el-get/el-get/el-get.el" "el-get/el-get-list-packages.el"
+;;;;;;  "el-get/el-get.el") (21594 4832 769487 0))
 
 ;;;***
 
