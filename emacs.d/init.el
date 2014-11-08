@@ -100,3 +100,5 @@
 (setq auto-save-file-name-transforms
    `((".*" ,"~/.tmp" t)))
 (require 'haml-mode)
+(projectile-global-mode)
+(setq gc-cons-threshold 20000000)
