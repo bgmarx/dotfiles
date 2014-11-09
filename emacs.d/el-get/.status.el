@@ -6,5 +6,7 @@
                 :load "el-get.el"))
  (haml-mode status "installed" recipe
             (:name haml-mode :description "Major mode for editing Haml files" :type github :pkgname "nex3/haml-mode"))
+ (perspective status "installed" recipe
+              (:name perspective :type github :description "switch between named perspectives of the editor" :pkgname "nex3/perspective-el"))
  (undo-tree status "installed" recipe
             (:name undo-tree :description "Treat undo history as a tree" :website "http://www.dr-qubit.org/emacs.php" :type git :url "http://www.dr-qubit.org/git/undo-tree.git/")))
