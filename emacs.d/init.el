@@ -102,5 +102,5 @@
 (require 'haml-mode)
 (projectile-global-mode)
 (setq gc-cons-threshold 20000000)
-(persp-mode)
-(require 'persp-projectile)
+;;(persp-mode)
+;;(require 'persp-projectile)
