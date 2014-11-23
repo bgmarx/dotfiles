@@ -101,6 +101,7 @@
    `((".*" ,"~/.tmp" t)))
 (require 'haml-mode)
 (projectile-global-mode)
+
 (setq gc-cons-threshold 20000000)
 ;;(persp-mode)
 ;;(require 'persp-projectile)
@@ -110,3 +111,4 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 (add-hook 'after-init-hook #'global-flycheck-mode)
+(global-set-key (kbd "C-c r r") 'inf-ruby)

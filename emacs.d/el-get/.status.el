@@ -6,6 +6,8 @@
                 :load "el-get.el"))
  (haml-mode status "installed" recipe
             (:name haml-mode :description "Major mode for editing Haml files" :type github :pkgname "nex3/haml-mode"))
+ (inf-ruby status "installed" recipe
+           (:name inf-ruby :description "Inferior Ruby Mode - ruby process in a buffer." :type github :pkgname "nonsequitur/inf-ruby"))
  (markdown-mode status "installed" recipe
                 (:name markdown-mode :description "Major mode to edit Markdown files in Emacs" :website "http://jblevins.org/projects/markdown-mode/" :type git :url "git://jblevins.org/git/markdown-mode.git" :prepare
                        (add-to-list 'auto-mode-alist

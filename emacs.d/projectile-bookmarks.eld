@@ -1,1 +1,1 @@
-("~/dev/kennel/" "~/dotfiles/" "~/dev/chalk/nimbus/" "~/dev/chalk/qt_mcwhiskers/" "~/dev/chalk/robot_devil/" "~/src/mom_account_models/" "~/dev/base_roller/")
+("~/dotfiles/" "~/dev/kennel/" "~/dev/chalk/nimbus/" "~/dev/chalk/qt_mcwhiskers/" "~/dev/chalk/robot_devil/" "~/src/mom_account_models/" "~/dev/base_roller/")
