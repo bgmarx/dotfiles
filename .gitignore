@@ -1,15 +1,15 @@
 .DS_Store
 
-vim/bundle/ckup
-/elpa
+vim/bundle
+/emacs.d/elpa
 
 .#*
 *~
-/el-get/el-get/
-/el-get
+/emacs.d/el-get/el-get/
+/emacs.d/el-get
 **/#*#
 /.org-id-locations
 /bookmarks
-/eshell/history
-/eshell/lastdir
+/emacs.d/eshell/history
+/emacs.d/eshell/lastdir
 

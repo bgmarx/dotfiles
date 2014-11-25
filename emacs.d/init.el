@@ -3,21 +3,25 @@
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (setq inhibit-startup-message t)
 (require 'cl)
+
 (require 'package)
-(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
-
-(unless (require 'el-get nil t)
-  (with-current-buffer
-      (url-retrieve-synchronously
-       "https://github.com/dimitri/el-get/raw/master/el-get-install.el")
-    (end-of-buffer)
-    (eval-print-last-sexp)))
-
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("org" . "http://orgmode.org/elpa/")
-                        ("marmalade" . "http://marmalade-repo.org/packages/")
-                         ("melpa-stable" . "http://melpa-stable.milkbox.net/packages/")))
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives
+             '("ELPA" . "http://tromey.com/elpa/"))
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives
+             '("org" . "http://orgmode.org/elpa/") t)
 (package-initialize)
+
+(setq el-get-dir (expand-file-name "el-get" user-emacs-directory))
+
+(add-to-list 'load-path
+             (expand-file-name "el-get/el-get" user-emacs-directory))
+(unless (require 'el-get nil t)
+  (url-retrieve "https://raw.github.com/dimitri/el-get/master/el-get-install.el"
+                                (lambda (s) (end-of-buffer) (eval-print-last-sexp))))
 
 (defun require-package (package)
   (setq-default highlight-tabs t)
@@ -31,6 +35,11 @@
     (set-face-attribute
           'default nil :font "Monaco 12"))
 
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+(ac-config-default)
+
+
 (global-linum-mode t)
 (setq linum-format "%d ")
 (setq-default tab-width 4 indent-tabs-mode nil)
@@ -39,9 +48,9 @@
 (setq gdb-many-windows t)
 (guru-global-mode +1)
 (setq guru-warn-only t)
-(require 'helm-config)
-(global-set-key (kbd "C-c h") 'helm-mini)
-(helm-mode 1)
+;(require 'helm-config)
+;(global-set-key (kbd "C-c h") 'helm-mini)
+;(helm-mode 1)
 (powerline-default-theme)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 (load-theme 'cyberpunk t)
@@ -112,3 +121,10 @@
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 (add-hook 'after-init-hook #'global-flycheck-mode)
 (global-set-key (kbd "C-c r r") 'inf-ruby)
+(global-hl-line-mode 1)
+
+
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; This is your old M-x.
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
