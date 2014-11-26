@@ -1,3 +1,5 @@
+;(mapc 'load-file (directory-files "~/.emacs.d/rc" t "\\.el\\'"))
+
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
@@ -33,12 +35,12 @@
 
 (if (member "Monaco" (font-family-list))
     (set-face-attribute
-          'default nil :font "Monaco 12"))
+          'default nil :font "Monaco 14"))
+;(set-default-font "Inconsolata-12")
 
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 (ac-config-default)
-
 
 (global-linum-mode t)
 (setq linum-format "%d ")
@@ -48,9 +50,9 @@
 (setq gdb-many-windows t)
 (guru-global-mode +1)
 (setq guru-warn-only t)
-;(require 'helm-config)
-;(global-set-key (kbd "C-c h") 'helm-mini)
-;(helm-mode 1)
+(require 'helm-config)
+(global-set-key (kbd "C-c h") 'helm-mini)
+(helm-mode 1)
 (powerline-default-theme)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 (load-theme 'cyberpunk t)
@@ -91,6 +93,7 @@
 (require 'ace-jump-mode)
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
+(yas-global-mode 1)
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
@@ -124,7 +127,15 @@
 (global-hl-line-mode 1)
 
 
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;;(global-set-key (kbd "M-x") 'smex)
+;;(global-set-key (kbd "M-X") 'smex-major-mode-commands)
 ;; This is your old M-x.
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+;;(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+(autoload 'scss-mode "scss-mode")
+(add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
+
+
+(require 'org)
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+(setq org-log-done t)
