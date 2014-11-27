@@ -1,10 +1,10 @@
-;(mapc 'load-file (directory-files "~/.emacs.d/rc" t "\\.el\\'"))
+
+(mapc 'load-file (directory-files "~/.emacs.d/init.d" t "\\.el\\'"))
 
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (setq inhibit-startup-message t)
-(require 'cl)
 
 (require 'package)
 (add-to-list 'package-archives
@@ -33,45 +33,37 @@
     (package-install package)))
 (display-time-mode t)
 
-(if (member "Monaco" (font-family-list))
-    (set-face-attribute
-          'default nil :font "Monaco 14"))
-;(set-default-font "Inconsolata-12")
-
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 (ac-config-default)
 
 (global-linum-mode t)
-(setq linum-format "%d ")
+(setq linum-format "%d | ")
 (setq-default tab-width 4 indent-tabs-mode nil)
 (define-key global-map (kbd "RET") 'newline-and-indent)
 (scroll-bar-mode -1)
 (setq gdb-many-windows t)
-(guru-global-mode +1)
-(setq guru-warn-only t)
+;(guru-global-mode +1)
+;(setq guru-warn-only t)
 (require 'helm-config)
 (global-set-key (kbd "C-c h") 'helm-mini)
 (helm-mode 1)
-(powerline-default-theme)
-(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
-(load-theme 'cyberpunk t)
-                                        ; Mouse in terminal
-(require 'mouse)
 
-;; mouse mode must be initialised for each new terminal
-;; see http://stackoverflow.com/a/6798279/27782
+
+(powerline-default-theme)
+
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
+(load-theme 'monokai t)
+
+(require 'mouse)
 (defun initialise-mouse-mode (&optional frame)
-  "Initialise mouse mode for the current terminal."
   (if (not frame) ;; The initial call.
       (xterm-mouse-mode 1)
     ;; Otherwise called via after-make-frame-functions.
     (if xterm-mouse-mode
         ;; Re-initialise the mode in case of a new terminal.
         (xterm-mouse-mode 1))))
-(setq x-select-enable-clipboard t)
-;; Evaluate both now (for non-daemon emacs) and upon frame creation
-;; (for new terminals via emacsclient).
 (initialise-mouse-mode)
 (add-hook 'after-make-frame-functions 'initialise-mouse-mode)
 
@@ -124,16 +116,22 @@
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 (add-hook 'after-init-hook #'global-flycheck-mode)
 (global-set-key (kbd "C-c r r") 'inf-ruby)
-(global-hl-line-mode 1)
 
+(define-key ruby-mode-map (kbd "C-c C-c") 'xmp)
+
+(global-hl-line-mode 1)
+(set-face-background 'hl-line "#3e4446")
+(set-face-foreground 'highlight nil)
 
 ;;(global-set-key (kbd "M-x") 'smex)
 ;;(global-set-key (kbd "M-X") 'smex-major-mode-commands)
 ;; This is your old M-x.
 ;;(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
 (autoload 'scss-mode "scss-mode")
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
 
+(setq multi-term-program "/bin/zsh")
 
 (require 'org)
 (define-key global-map "\C-cl" 'org-store-link)
