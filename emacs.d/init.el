@@ -1,7 +1,13 @@
-
 (mapc 'load-file (directory-files "~/.emacs.d/init.d" t "\\.el\\'"))
 
-(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+(if window-system
+        (menu-bar-mode 1))
+;(set-frame-parameter (selected-frame) 'menu-bar-lines 1) ;
+;(defun set-frame-menu-bar-lines (frame)
+;  (let ((want-menu (memq (framep frame) '(x w32 ns))))
+;    (set-frame-parameter frame 'menu-bar-lines (if want-menu 1 0))))
+;(add-hook 'after-make-frame-functions 'set-frame-menu-bar-lines)
+
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (setq inhibit-startup-message t)
