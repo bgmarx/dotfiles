@@ -1,0 +1,2 @@
+
+(load-theme 'monokai t)
