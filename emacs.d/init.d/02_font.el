@@ -1,6 +1,6 @@
 (set-face-attribute 'default nil
-                    :family "Inconsolata"
-                    :height 140
+                    :family "Monaco"
+                    :height 110
                     :weight 'normal
                     :width 'normal)
 
