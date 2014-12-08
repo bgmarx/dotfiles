@@ -1,7 +1,12 @@
-(setq backup-directory-alist
-      `((".*" . , "~/.tmp")))
-(setq auto-save-file-name-transforms
-         `((".*" ,"~/.tmp" t)))
+;;disable backup
+(setq backup-inhibited t)
+;;disable auto save
+(setq auto-save-default nil)
+
+;;(setq backup-directory-alist
+;;     `((".*" . , "~/.tmp")))
+;;(setq auto-save-file-name-transforms
+;;         `((".*" ,"~/.tmp" t)))
 
 (display-time-mode t)
 (setq inhibit-startup-message t)
@@ -20,9 +25,12 @@
 (setq uniquify-buffer-name-style 'forward)
 
 
+(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
-(when (window-system)
-  (tool-bar-mode -1)
-  (scroll-bar-mode -1))
+;(when (window-system)
+ ; (tool-bar-mode -1)
+ ; (scroll-bar-mode -1))
 
 ;(:eval (list (nyan-create))) 
