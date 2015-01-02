@@ -16,3 +16,8 @@ vim/bundle
 vim/.netrwhist
 emacs.d/ac-comphist.dat
 emacs.d/smex-items
+emacs.d/tmp
+emacs.d/recentf
+emacs.d/auto-save-list
+emacs.d/elpa
+emacs.d/eshell
