@@ -8,11 +8,12 @@
 ;;(setq auto-save-file-name-transforms
 ;;         `((".*" ,"~/.tmp" t)))
 
+(setq x-select-enable-clipboard t)
 (display-time-mode t)
 (setq inhibit-startup-message t)
 (global-linum-mode t)
 (setq linum-format "%d | ")
-(setq-default tab-width 4 indent-tabs-mode nil)
+(setq-default tab-width 2 indent-tabs-mode nil)
 (define-key global-map (kbd "RET") 'newline-and-indent)
 (require 'ansi-color)
 (defun colorize-compilation-buffer ()

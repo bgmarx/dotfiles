@@ -12,4 +12,5 @@ vim/bundle
 /bookmarks
 /emacs.d/eshell/history
 /emacs.d/eshell/lastdir
-
+/emacs.d/projectile-bookmarks.eld
+vim/.netrwhist
