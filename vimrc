@@ -24,8 +24,8 @@ Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'mikewest/vimroom'
 Plugin 'tpope/vim-markdown'
-Plugin 'guns/vim-clojure-static'
-Plugin 'tpope/vim-fireplace'
+Plugin 'elixir-lang/vim-elixir'
+
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 

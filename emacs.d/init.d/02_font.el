@@ -11,3 +11,5 @@
                                :width 'normal
                                :size 12.4
                                :weight 'normal)))
+;(unless (package-installed-p 'elixir-mode)
+;    (package-install 'elixir-mode))

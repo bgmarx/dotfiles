@@ -1,2 +1,2 @@
 
-(load-theme 'monokai t)
+(load-theme 'cyberpunk t)
