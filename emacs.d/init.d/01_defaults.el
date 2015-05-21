@@ -1,8 +1,9 @@
 
 ;; Disable backup files
-make-backup-files nil
-auto-save-default nil
-backup-inhibited t
+;; make-backup-files nil
+;; auto-save-default nil
+;; backup-inhibited t
+(setq make-backup-files nil)
 
 ;; Disable lockfiles
 create-lockfiles nil
