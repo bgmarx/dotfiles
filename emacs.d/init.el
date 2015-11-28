@@ -17,6 +17,7 @@
 (require 'helmconfig)
 (require 'html)
 (require 'ido-config)
+(require 'keybindings)
 (require 'mag-it)
 (require 'org-config)
 (require 'ruby)
