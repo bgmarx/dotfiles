@@ -1,5 +1,6 @@
 (require 'github-browse-file)
 (require 'multiple-cursors)
+(require 'rainbow-delimiters)
 ;; Use bin/bash as default shell for Emacs to work around PATH issues with zsh
 ;;(setq shell-file-name "/usr/local/bin/zsh")
 
@@ -10,7 +11,7 @@
 
 ;; revert buffers automatically when underlying files are changed
 (global-auto-revert-mode t)
-
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 ;; enable y/n answers
 (fset 'yes-or-no-p 'y-or-n-p)
 
