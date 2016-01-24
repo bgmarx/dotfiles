@@ -38,7 +38,7 @@ ZSH_THEME="af-magic"
 # much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Uncomment following line if you want to  shown in the command execution time stamp 
+# Uncomment following line if you want to  shown in the command execution time stamp
 # in the history command output. The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|
 # yyyy-mm-dd
 # HIST_STAMPS="mm/dd/yyyy"
@@ -54,4 +54,5 @@ export TERM=xterm-256color
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="/Users/ben/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
+export GOPATH=$HOME
 eval "$(rbenv init -)"
