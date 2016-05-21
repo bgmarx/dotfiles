@@ -14,6 +14,7 @@
 ;;(require 'dir-ed)
 (require 'display)
 (require 'elixir)
+(require 'elm-mode)
 (require 'helmconfig)
 (require 'html)
 (require 'ido-config)

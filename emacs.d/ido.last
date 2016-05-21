@@ -1,0 +1,224 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/ben/dev/banger/lib/" . "banger/")
+ ("/Users/ben/dev/banger/" . "lib/")
+ ("/Users/ben/dev/oscex/lib/" . "oscex/")
+ ("/Users/ben/Dropbox/ex3/exosc/lib/" . "osc/")
+ ("/Users/ben/Dropbox/ex3/exosc/" . "lib/")
+ ("/Users/ben/dev/egghead-flux/node_modules/flux/" . "lib/")
+ ("/Users/ben/dev/egghead-flux/node_modules/" . "flux/")
+ ("/Users/ben/dev/egghead-flux/src/js/" . "action/")
+ ("/Users/ben/dev/egghead-flux/src/" . "js/")
+ ("/Users/ben/dev/egghead-flux/" . "src/")
+ ("/Users/ben/dev/bugsnag-elixir/test/" . "bugsnag/")
+ ("/Users/ben/dev/bugsnag-elixir/" . "test/")
+ ("/Users/ben/dev/bugsnag-elixir/lib/" . "bugsnag/")
+ ("/Users/ben/dev/exacs/lib/exacs/" . "query/")
+ ("/Users/ben/dev/embeder/" . "lib/")
+ ("/Users/ben/dev/exacs/lib/" . "exacs/")
+ ("/Users/ben/dev/exacs/" . "lib/")
+ ("/Users/ben/dev/" . "egghead-flux/")
+ ("/Users/ben/dev/rumbl/test/" . "controllers/")
+ ("/Users/ben/dev/rumbl/lib/rumbl/" . "info_sys/")
+ ("/Users/ben/dev/rumbl/lib/" . "rumbl/")
+ ("/Users/ben/dev/rumbl/web/static/" . "js/")
+ ("/Users/ben/dev/rumbl/web/templates/" . "watch/")
+ ("/Users/ben/dev/rumbl/priv/repo/" . "migrations/")
+ ("/Users/ben/dev/rumbl/priv/" . "repo/")
+ ("/Users/ben/dev/rumbl/" . "test/")
+ ("/Users/ben/dev/rumbl/web/" . "models/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/ben/dev/banger/"
+ "/Users/ben/dev/banger/lib/"
+ "/Users/ben/dev/prog_elixir_1_2/"
+ "/Users/ben/dev/oscex/lib/oscex/"
+ "/Users/ben/dev/oscex/lib/"
+ "/Users/ben/Dropbox/ex3/exosc/lib/osc/"
+ "/Users/ben/Dropbox/ex3/exosc/lib/"
+ "/Users/ben/Dropbox/ex3/exosc/config/"
+ "/Users/ben/dev/exacs/lib/exacs/"
+ "/Users/ben/dev/exacs/lib/"
+ "/Users/ben/dev/egghead-flux/src/js/action/"
+ "/Users/ben/dev/egghead-flux/src/js/constants/"
+ "/Users/ben/dev/egghead-flux/src/js/dispatchers/"
+ "/Users/ben/dev/egghead-flux/node_modules/flux/lib/"
+ "/Users/ben/dev/egghead-flux/src/js/components/"
+ "/Users/ben/dev/egghead-flux/src/js/"
+ "/Users/ben/dev/egghead-flux/dist/"
+ "/Users/ben/dev/egghead-flux/"
+ "/Users/ben/dev/bugsnag-elixir/test/bugsnag/"
+ "/Users/ben/dev/bugsnag-elixir/lib/bugsnag/"
+ "/Users/ben/dev/bugsnag-elixir/lib/"
+ "/Users/ben/dev/exacs/lib/exacs/query/"
+ "/Users/ben/dev/exacs/test/"
+ "/Users/ben/dev/exacs/"
+ "/Users/ben/dev/embeder/lib/"
+ "/Users/ben/dev/exacs/config/"
+ "/Users/ben/dev/rumbl/test/controllers/"
+ "/Users/ben/dev/rumbl/test/support/"
+ "/Users/ben/dev/rumbl/lib/rumbl/info_sys/"
+ "/Users/ben/dev/rumbl/lib/"
+ "/Users/ben/dev/rumbl/config/"
+ "/Users/ben/dev/rumbl/"
+ "/Users/ben/dev/rumbl/priv/repo/"
+ "/Users/ben/dev/rumbl/lib/rumbl/"
+ "/Users/ben/dev/rumbl/priv/repo/migrations/"
+ "/Users/ben/dev/rumbl/web/models/"
+ "/Users/ben/dev/rumbl/web/views/"
+ "/Users/ben/dev/rumbl/web/static/js/"
+ "/Users/ben/dev/rumbl/web/templates/watch/"
+ "/Users/ben/dev/rumbl/web/channels/"
+ "/Users/ben/dev/rumbl/web/static/css/"
+ "/Users/ben/dev/rumbl/web/controllers/"
+ "/Users/ben/dev/rumbl/web/templates/page/"
+ "/Users/ben/dev/rumbl/web/templates/video/"
+ "/Users/ben/dev/rumbl/web/templates/layout/"
+ "/Users/ben/dev/rumbl/web/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "mix.exs"
+ "banger.ex"
+ "spawn1.ex"
+ "client.ex"
+ "oscex.ex"
+ "server.ex"
+ "exosc.ex"
+ "config.exs"
+ "connection.ex"
+ "exacs.ex"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/ben/dev/banger/lib/banger/" (22328 56716 0 0) "../" "./")
+
+ ("/Users/ben/dev/banger/" (22333 62530 0 0) "test/" "README.md" "mix.lock" "mix.exs" "lib/" "deps/" "config/" "_build/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/ben/dev/banger/lib/" (22328 56716 0 0) "banger.ex" "banger/" "../" "./")
+
+ ("/Users/ben/dev/prog_elixir_1_2/" (22328 15510 0 0) "spawn1.ex" "Elixir.Spawn1.beam" "../" "./")
+
+ ("/Users/ben/dev/oscex/lib/" (22192 20798 0 0) "oscex.ex" "oscex/" "../" "./")
+
+ ("/Users/ben/dev/oscex/lib/oscex/" (22198 59156 0 0) "server.ex" "message.ex" "client.ex" "../" "./")
+
+ ("/Users/ben/Dropbox/ex3/exosc/lib/osc/" (22188 65398 0 0) "message.ex" "client.ex" "../" "./")
+
+ ("/Users/ben/Dropbox/ex3/exosc/lib/" (22188 65395 0 0) "osc/" "exosc.ex" "../" "./")
+
+ ("/Users/ben/Dropbox/ex3/exosc/config/" (22188 65398 0 0) "config.exs" "../" "./")
+
+ ("/Users/ben/Dropbox/ex3/exosc/" (22188 65395 0 0) "test/" "README.md" "mix.exs" "lib/" "config/" ".travis.yml" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/ben/dev/exacs/lib/" (22161 38379 0 0) "exacs.ex" "exacs/" "../" "./")
+
+ ("/Users/ben/dev/exacs/" (22149 43137 0 0) "test/" "README.md" "mix.lock" "mix.exs" "lib/" "deps/" "config/" "_build/" ".travis.yml" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/ben/dev/egghead-flux/src/js/action/" (22156 37933 0 0) "app-actions.js" "../" "./")
+
+ ("/Users/ben/dev/egghead-flux/src/js/constants/" (22156 37794 0 0) "app-constants.js" "../" "./")
+
+ ("/Users/ben/dev/egghead-flux/src/js/dispatchers/" (22156 37616 0 0) "app-dispatcher.js" "../" "./")
+
+ ("/Users/ben/dev/" (22156 34897 0 0) "tmp/" "rumbl/" "rawscsi/" "phoenix_chat_example/" "neo4j_ecto/" "mongodb_ecto/" "hirepool/" "exacs/" "embeder/" "egghead-flux/" "ecto_neo4j/" "dumb/" "bugsnag-elixir/" "bgmarx.github.io/" ".DS_Store" "../" "./")
+
+ ("/Users/ben/dev/egghead-flux/node_modules/flux/lib/" (22156 36949 0 0) "FluxStoreGroup.js" "FluxStore.js" "FluxReduceStore.js" "FluxMixinLegacy.js" "FluxMapStore.js" "FluxContainer.js" "Dispatcher.js" "abstractMethod.js" "../" "./")
+
+ ("/Users/ben/dev/egghead-flux/node_modules/flux/" (22156 36949 0 0) "utils.js" "README.md" "PATENTS" "package.json" "LICENSE" "lib/" "index.js" "flow/" "dist/" "../" "./")
+
+ ("/Users/ben/dev/egghead-flux/node_modules/" (22156 37265 0 0) "yargs/" "wordwrap/" "window-size/" "whatwg-fetch/" "webpack-core/" "webpack/" "watchpack/" "warning/" "vm-browserify/" "util-deprecate/" "util/" "user-home/" "url/" "uglify-to-browserify/" "uglify-js/" "ua-parser-js/" "tty-browserify/" "trim-right/" "to-fast-properties/" "timers-browserify/" "through/" "tapable/" "supports-color/" "success-symbol/" "strip-ansi/" "string_decoder/" "strict-uri-encode/" "stream-browserify/" "source-map-support/" "source-map/" "source-list-map/" "slash/" "shebang-regex/" "sha.js/" "ripemd160/" "right-align/" "repeating/" "repeat-string/" "repeat-element/" "regjsparser/" "regjsgen/" "regexpu/" "regex-cache/" "regenerate/" "recast/" "readdirp/" "readable-stream/" "react-router/" "react-dom/" "react/" "randomatic/" "querystring-es3/" "querystring/" "query-string/" "punycode/" "prr/" "promise/" "process-nextick-args/" "process/" "private/" "preserve/" "pbkdf2-compat/" "path-is-absolute/" "path-exists/" "path-browserify/" "parse-glob/" "pako/" "os-tmpdir/" "os-browserify/" "optimist/" "object.omit/" "object-assign/" "number-is-nan/" "normalize-path/" "node-pre-gyp/" "node-libs-browser/" "nan/" "ms/" "mkdirp/" "minimist/" "minimatch/" "micromatch/" "memory-fs/" "loose-envify/" "longest/" "lodash/" "loader-utils/" "line-numbers/" "left-pad/" "lazy-cache/" "kind-of/" "jstransform/" "json5/" "jsesc/" "js-tokens/" "isobject/" "isarray/" "is-primitive/" "is-number/" "is-integer/" "is-glob/" "is-finite/" "is-extglob/" "is-extendable/" "is-equal-shallow/" "is-dotfile/" "is-buffer/" "is-binary-path/" "invariant/" "interpret/" "inherits/" "indexof/" "immutable/" "ieee754/" "https-browserify/" "http-browserify/" "home-or-tmp/" "history/" "has-flag/" "has-ansi/" "graceful-fs/" "globals/" "glob-parent/" "glob-base/" "get-stdin/" "fsevents/" "for-own/" "for-in/" "flux/" "fill-range/" "filename-regex/" "fbjs/" "fbemitter/" "extglob/" "expand-range/" "expand-brackets/" "events/" "esutils/" "esprima-fb/" "escape-string-regexp/" "errno/" "envify/" "enhanced-resolve/" "domain-browser/" "detect-indent/" "deep-equal/" "decamelize/" "debug/" "date-now/" "crypto-browserify/" "core-util-is/" "core-js/" "convert-source-map/" "constants-browserify/" "console-browserify/" "concat-map/" "clone/" "cliui/" "chokidar/" "chalk/" "center-align/" "camelcase/" "buffer/" "browserify-zlib/" "braces/" "brace-expansion/" "binary-extensions/" "big.js/" "base64-js/" "Base64/" "base62/" "balanced-match/" "babylon/" "babel-types/" "babel-traverse/" "babel-template/" "babel-runtime/" "babel-register/" "babel-preset-react/" "babel-preset-es2015/" "babel-plugin-transform-strict-mode/" "babel-plugin-transform-regenerator/" "babel-plugin-transform-react-jsx-source/" "babel-plugin-transform-react-jsx/" "babel-plugin-transform-react-display-name/" "babel-plugin-transform-flow-strip-types/" "babel-plugin-transform-es2015-unicode-regex/" "babel-plugin-transform-es2015-typeof-symbol/" "babel-plugin-transform-es2015-template-literals/" "babel-plugin-transform-es2015-sticky-regex/" "babel-plugin-transform-es2015-spread/" "babel-plugin-transform-es2015-shorthand-properties/" "babel-plugin-transform-es2015-parameters/" "babel-plugin-transform-es2015-object-super/" "babel-plugin-transform-es2015-modules-commonjs/" "babel-plugin-transform-es2015-literals/" "babel-plugin-transform-es2015-function-name/" "babel-plugin-transform-es2015-for-of/" "babel-plugin-transform-es2015-destructuring/" "babel-plugin-transform-es2015-computed-properties/" "babel-plugin-transform-es2015-classes/" "babel-plugin-transform-es2015-block-scoping/" "babel-plugin-transform-es2015-block-scoped-functions/" "babel-plugin-transform-es2015-arrow-functions/" "babel-plugin-syntax-jsx/" "babel-plugin-syntax-flow/" "babel-plugin-syntax-async-functions/" "babel-plugin-check-es2015-constants/" "babel-messages/" "babel-loader/" "babel-helpers/" "babel-helper-replace-supers/" "babel-helper-regex/" "babel-helper-optimise-call-expression/" "babel-helper-hoist-variables/" "babel-helper-get-function-arity/" "babel-helper-function-name/" "babel-helper-define-map/" "babel-helper-call-delegate/" "babel-helper-builder-react-jsx/" "babel-generator/" "babel-core/" "babel-code-frame/" "async-each/" "async/" "ast-types/" "assert/" "asap/" "arrify/" "array-unique/" "arr-flatten/" "arr-diff/" "anymatch/" "ansi-wrap/" "ansi-styles/" "ansi-regex/" "ansi-green/" "amdefine/" "align-text/" ".bin/" "../" "./")
+
+ ("/Users/ben/dev/egghead-flux/" (22156 37265 0 0) "webpack.config.js" "src/" "package.json" "node_modules/" "dist/" "../" "./")
+
+ ("/Users/ben/dev/egghead-flux/src/js/components/" (22156 35301 0 0) "app.js" "../" "./")
+
+ ("/Users/ben/dev/egghead-flux/src/js/" (22156 35292 0 0) "stores/" "mixins/" "main.js" "dispatchers/" "constants/" "components/" "action/" "../" "./")
+
+ ("/Users/ben/dev/egghead-flux/src/" (22156 35270 0 0) "js/" "../" "./")
+
+ ("/Users/ben/dev/egghead-flux/dist/" (22156 35312 0 0) "index.html" "../" "./")
+
+ ("/Users/ben/dev/bugsnag-elixir/test/bugsnag/" (22155 10162 0 0) "payload_test.exs" "../" "./")
+
+ ("/Users/ben/dev/bugsnag-elixir/test/" (22155 10162 0 0) "test_helper.exs" "bugsnag_test.exs" "bugsnag/" "../" "./")
+
+ ("/Users/ben/dev/bugsnag-elixir/lib/bugsnag/" (22155 10162 0 0) "payload.ex" "../" "./")
+
+ ("/Users/ben/dev/bugsnag-elixir/lib/" (22155 10162 0 0) "bugsnag.ex" "bugsnag/" "../" "./")
+
+ ("/Users/ben/dev/bugsnag-elixir/" (22155 10222 0 0) "test/" "README.md" "mix.lock" "mix.exs" "LICENSE" "lib/" "deps/" "config/" "_build/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/ben/dev/exacs/lib/exacs/query/" (22149 43137 0 0) "simple.ex" "compound.ex" "../" "./")
+
+ ("/Users/ben/dev/exacs/test/" (22143 32045 0 0) "test_helper.exs" "search_test.ex" "query/" "fixture/" "exacs_test.exs" "../" "./")
+
+ ("/Users/ben/dev/exacs/lib/exacs/" (22139 8553 0 0) "search.ex" "request_signature.ex" "query/" "connection.ex" "../" "./")
+
+ ("/Users/ben/dev/embeder/lib/" (22136 56796 0 0) "youtube.ex" "twitter.ex" "scoreboard.ex" "plug_metrics.ex" "oembed.ex" "instagram.ex" "gametime.ex" "facebook.ex" "embeder.ex" "embeder/" "br.ex" ".DS_Store" "../" "./")
+
+ ("/Users/ben/dev/embeder/" (22136 56796 0 0) "web/" "test/" "README.md" "priv/" "mix.lock" "mix.exs" "lib/" "jack/" "Dockerrun.aws.json" "Dockerfile" "docker-compose.yml" "config/" "circle.yml" ".gitignore" ".git/" ".gantreecfg" ".env.sample" ".DS_Store" "../" "./")
+
+ ("/Users/ben/dev/exacs/config/" (22133 53279 0 0) "config.exs" "../" "./")
+
+ ("/Users/ben/dev/rumbl/test/controllers/" (22123 25821 0 0) "video_controller_test.exs" "page_controller_test.exs" "../" "./")
+
+ ("/Users/ben/dev/rumbl/test/support/" (22123 25526 0 0) "test_helpers.ex" "model_case.ex" "conn_case.ex" "channel_case.ex" "../" "./")
+
+ ("/Users/ben/dev/rumbl/test/" (22107 22098 0 0) "views/" "test_helper.exs" "support/" "models/" "controllers/" "channels/" "../" "./")
+
+ ("/Users/ben/dev/rumbl/lib/rumbl/info_sys/" (22119 53150 0 0) "wolfram.ex" "supervisor.ex" "../" "./")
+
+ ("/Users/ben/dev/rumbl/config/" (22119 52476 0 0) "test.exs" "prod.secret.exs" "prod.exs" "dev.secrets.exs" "dev.exs" "config.exs" "../" "./")
+
+ ("/Users/ben/dev/rumbl/priv/repo/" (22119 52006 0 0) "seeds.exs" "migrations/" "backend_seeds.exs" ".DS_Store" "../" "./")
+
+ ("/Users/ben/dev/rumbl/lib/rumbl/" (22119 48373 0 0) "repo.ex" "permalink.ex" "info_sys.ex" "info_sys/" "endpoint.ex" "counter.ex" "../" "./")
+
+ ("/Users/ben/dev/rumbl/web/models/" (22116 36970 0 0) "video.ex" "user.ex" "category.ex" "annotation.ex" "../" "./")
+
+ ("/Users/ben/dev/rumbl/web/views/" (22116 40031 0 0) "watch_view.ex" "video_view.ex" "user_view.ex" "session_view.ex" "page_view.ex" "layout_view.ex" "error_view.ex" "annotation_view.ex" "../" "./")
+
+ ("/Users/ben/dev/rumbl/priv/repo/migrations/" (22116 36970 0 0) "20151206194546_create_annotation.exs" "20151205093439_add_slug_to_video.exs" "20151205074421_add_category_id_to_video.exs" "20151205074051_create_category.exs" "20151205051511_create_video.exs" "20151129225428_create_user.exs" "../" "./")
+
+ ("/Users/ben/dev/rumbl/web/channels/" (22115 28540 0 0) "video_channel.ex" "user_socket.ex" "../" "./")
+
+ ("/Users/ben/dev/rumbl/web/static/js/" (22115 27682 0 0) "video.js" "socket.js" "player.js" "app.js" "../" "./")
+
+ ("/Users/ben/dev/rumbl/lib/" (22107 22098 0 0) "rumbl.ex" "rumbl/" "../" "./")
+
+ ("/Users/ben/dev/rumbl/priv/" (22114 45045 0 0) "static/" "repo/" ".DS_Store" "../" "./")
+
+ ("/Users/" (22078 48191 0 0) "Shared/" "Guest/" "ben/" ".localized" "../" "./")
+
+ ("/Users/ben/" (22114 44974 0 0) "zshrc" "VirtualBox VMs/" "vim.txt" "shared/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "dotfiles/" "Documents/" "dev/" "Desktop/" "Applications/" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-Ben’s MacBook Air-5.0.8" ".zcompdump-basashi-5.0.8" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".tmp/" ".subversion/" ".ssh/" ".spacemacs" ".rbenv/" ".psql_history" ".osx" ".oh-my-zsh/" ".npm/" ".node-gyp/" ".mix/" ".hex/" ".gvimrc" ".gitconfig" ".gem/" ".erlang.cookie" ".emacsserver.pid" ".emacs.d/" ".DS_Store" ".dropbox/" ".docker/" ".cups/" ".CFUserTextEncoding" ".cache/" ".bash_history" ".aliases" "../" "./")
+
+ ("/Users/ben/dev/rumbl/" (22114 43963 0 0) "web/" "video.css" "test/" "README.md" "priv/" "package.json" "node_modules/" "mix.lock" "mix.exs" "lib/" "deps/" "config/" "brunch-config.js" "_build/" ".gitignore" ".DS_Store" "../" "./")
+
+ ("/Users/ben/dev/rumbl/web/static/css/" (22114 43699 0 0) "video.css" "app.css" "../" "./")
+
+ ("/Users/ben/dev/rumbl/web/templates/page/" (22107 22099 0 0) "index.html.eex" "../" "./")
+
+ ("/Users/ben/dev/rumbl/web/static/" (22107 22099 0 0) "vendor/" "js/" "css/" "assets/" "../" "./")
+
+ ("/Users/ben/dev/rumbl/web/templates/watch/" (22114 42272 0 0) "show.html.eex" "../" "./")
+
+ ("/Users/ben/dev/rumbl/web/controllers/" (22114 42285 0 0) "watch_controller.ex" "video_controller.ex" "user_controller.ex" "session_controller.ex" "page_controller.ex" "auth.ex" "../" "./")
+
+ ("/Users/ben/dev/rumbl/web/templates/" (22114 42267 0 0) "watch/" "video/" "user/" "session/" "page/" "layout/" ".DS_Store" "../" "./")
+
+ ("/Users/ben/dev/rumbl/web/templates/layout/" (22107 22099 0 0) "app.html.eex" "../" "./")
+
+ ("/Users/ben/dev/rumbl/web/templates/video/" (22114 29407 0 0) "show.html.eex" "new.html.eex" "index.html.eex" "form.html.eex" "edit.html.eex" "../" "./")
+
+ ("/Users/ben/dev/rumbl/web/" (22110 33252 0 0) "web.ex" "views/" "templates/" "static/" "router.ex" "models/" "controllers/" "channels/" ".DS_Store" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
