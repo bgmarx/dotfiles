@@ -22,6 +22,7 @@
 (require 'mag-it)
 (require 'org-config)
 (require 'ruby)
+(require 'rust-mode)
 (require 'smart-parens)
 (require 'writer)
 (require 'ya-snippet)

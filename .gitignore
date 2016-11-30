@@ -21,3 +21,5 @@ emacs.d/recentf
 emacs.d/auto-save-list
 emacs.d/elpa
 emacs.d/eshell
+emacs.d/ido.last
+vim/bundle/YouCompleteMe

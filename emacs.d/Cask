@@ -61,6 +61,7 @@
 (depends-on "rspec-mode")
 (depends-on "ruby-compilation")
 (depends-on "ruby-mode")
+(depends-on "rust-mode")
 (depends-on "s")
 (depends-on "sass-mode")
 (depends-on "saveplace")
