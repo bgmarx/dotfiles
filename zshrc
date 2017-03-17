@@ -56,3 +56,8 @@ export TERM=xterm-256color
 export PATH="/Users/ben/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
 export GOPATH=$HOME
 eval "$(rbenv init -)"
+test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash
+export JAVA_HOME=$(/usr/libexec/java_home)
