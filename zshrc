@@ -60,4 +60,5 @@ test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 . $HOME/.asdf/asdf.sh
 
 . $HOME/.asdf/completions/asdf.bash
+
 export JAVA_HOME=$(/usr/libexec/java_home)
