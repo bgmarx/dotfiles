@@ -1,7 +1,7 @@
 (setq package-enable-at-startup nil)
 (package-initialize)
 
-(require 'cask "/usr/local/Cellar/cask/0.7.3/cask.el")
+(require 'cask "/usr/local/Cellar/cask/0.7.4/cask.el")
 (cask-initialize)
 
 (require 'pallet)

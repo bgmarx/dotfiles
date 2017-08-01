@@ -55,6 +55,8 @@ export TERM=xterm-256color
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="/Users/ben/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
 export GOPATH=$HOME
+export PATH="/Library/TeX/texbin"
+export ERL_AFLAGS="-kernel shell_history enabled"
 eval "$(rbenv init -)"
 export PATH="$HOME/.cargo/bin:$PATH"
 export JAVA_HOME=$(/usr/libexec/java_home)
