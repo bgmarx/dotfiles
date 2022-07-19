@@ -170,3 +170,31 @@ for app in Finder Dock Mail Safari iTunes iCal Address\ Book SystemUIServer Twit
 	killall "$app" > /dev/null 2>&1
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+
+
+
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
+sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
+defaults write com.apple.terminal StringEncodings -array 4
+defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+defaults write com.apple.appstore ShowDebugMenu -bool true
+# Set a blazingly fast keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
+
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+defaults write com.apple.screencapture type -string "png"
+defaults write com.apple.finder QuitMenuItem -bool true
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+# Show the /Volumes folder
+sudo chflags nohidden /Volumes
